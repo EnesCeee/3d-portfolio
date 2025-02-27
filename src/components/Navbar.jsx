@@ -41,62 +41,70 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full flex items-center bg-gradient-to-b from-black sm:bg-none p-8 sm:px-16 sm:py-10 fixed z-40 pointer-events-none"
+      className={`w-full flex items-center fixed top-0 z-40 transition-all duration-300 ${scrolled ? "bg-primary/80 backdrop-blur-sm" : "bg-transparent"
+        } px-4 sm:px-8 lg:px-16 py-4 sm:py-6`}
     >
-      <div className='w-full flex justify-between items-start mx-auto'>
+      <div className='w-full flex justify-between items-center mx-auto'>
         <Link
           to='/'
-          className='flex items-start'
+          className='flex items-center'
           onClick={() => {
             setActive("hero");
             window.scrollTo(0, 0);
           }}
         >
-          <p className='text-white text-[26px] lg:text-[36px] font-bold pointer-events-auto cursor-pointer flex'>
+          <p className='text-white text-[20px] sm:text-[26px] lg:text-[36px] font-bold cursor-pointer'>
             Ceylan's Portfolio
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-col gap-5'>
+        <ul className='list-none hidden sm:flex flex-row gap-8 items-center'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`relative flex items-center ${active === nav.id ? "text-white" : "text-slate-500"
-                } hover:text-white text-[18px] lg:text-[24px] font-bold pointer-events-auto cursor-pointer`}
+                } hover:text-white text-[16px] lg:text-[20px] font-medium cursor-pointer transition-colors duration-300`}
               onClick={() => setActive(nav.id)}
             >
-              {active === nav.id && (
-                <div className="fixed right-10 w-2 h-6 lg:h-8 bg-quaternary"></div>
-              )}
               <a href={`#${nav.id}`}>{nav.title}</a>
+              {active === nav.id && (
+                <div className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-quaternary"></div>
+              )}
             </li>
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain pointer-events-auto cursor-pointer'
+        <div className='sm:hidden flex justify-end items-center'>
+          <button
+            className="p-2 rounded-lg hover:bg-white/10 transition-colors duration-300"
             onClick={() => setToggle(!toggle)}
-          />
+            aria-label={toggle ? "Close menu" : "Open menu"}
+          >
+            <img
+              src={toggle ? close : menu}
+              alt='menu'
+              className='w-6 h-6 object-contain'
+            />
+          </button>
 
           <div
-            className={`${!toggle ? "hidden" : "flex"
-              } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-30 rounded-xl`}
+            className={`${!toggle ? "translate-x-full opacity-0" : "translate-x-0 opacity-100"
+              } fixed top-[60px] right-0 h-screen w-[240px] bg-primary/95 backdrop-blur-md shadow-xl transition-all duration-300 ease-in-out`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+            <ul className='list-none flex flex-col items-start p-6 gap-6'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.id ? "text-quaternary" : "text-secondary"
-                    }`}
+                  className={`w-full font-medium cursor-pointer text-[16px] ${active === nav.id ? "text-quaternary" : "text-white/70"
+                    } hover:text-white transition-colors duration-300`}
                   onClick={() => {
-                    setToggle(!toggle);
+                    setToggle(false);
                     setActive(nav.id);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`} className="block w-full py-2">
+                    {nav.title}
+                  </a>
                 </li>
               ))}
             </ul>
