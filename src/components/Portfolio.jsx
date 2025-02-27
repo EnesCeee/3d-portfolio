@@ -32,19 +32,19 @@ const ProjectCard = ({
       animate={controls}
       initial="hidden"
       variants={fadeIn("up", "spring", 0, 0.75)}
-      className={`w-full mt-[-2px] flex flex-col md:flex-row ${isEven ? "md:flex-row" : "md:flex-row-reverse"} gap-5`}
+      className={`w-full mt-[-2px] flex flex-col md:flex-row ${isEven ? "md:flex-row" : "md:flex-row-reverse"} gap-5 md:gap-8`}
     >
       <div className='relative w-full md:w-3/5'>
         <img
           src={image}
           alt='project_image'
-          className='w-full h-auto object-cover md:rounded-3xl'
+          className='w-full h-auto object-cover rounded-lg md:rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300'
         />
       </div>
 
-      <div className={`w-full md:w-2/5 px-6 md:p-16 flex flex-col justify-center ${isEven ? "text-left md:text-left" : "text-left md:text-right"}`}>
-        <h3 className='text-white font-medium text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl lg:text-5xl leading-tight'>{name}</h3>
-        <p className='mt-4 text-secondary text-sm sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl'>{description}</p>
+      <div className={`w-full md:w-2/5 px-4 sm:px-6 md:p-8 lg:p-12 flex flex-col justify-center ${isEven ? "text-left" : "text-left md:text-right"}`}>
+        <h3 className='text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight'>{name}</h3>
+        <p className='mt-3 sm:mt-4 text-secondary text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed'>{description}</p>
       </div>
     </motion.div>
   );
@@ -52,12 +52,12 @@ const ProjectCard = ({
 
 const Portfolio = () => {
   return (
-    <div className='text-center md:text-left md:px-20 lg:px-40'>
+    <div className='px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32'>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionText}`}>Portfolio</h2>
+        <h2 className={`${styles.sectionText} text-center mb-8 sm:mb-12`}>Portfolio</h2>
       </motion.div>
 
-      <div className='mt-10 md:mt-20 flex flex-col gap-10 md:gap-20'>
+      <div className='mt-8 sm:mt-12 md:mt-16 flex flex-col gap-12 sm:gap-16 md:gap-24'>
         {portfolio.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
