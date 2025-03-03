@@ -6,9 +6,8 @@ import Navbar from "./Navbar";
 import Portfolio from "./Portfolio";
 import Position from "./Position";
 import SpacemanCanvas from "./Spaceman";
-import SnakeGame from "./SnakeGame";
 
 export {
-    CanvasLoader, Contact, Experience, Hero, Navbar, Portfolio, Position, SpacemanCanvas, SnakeGame
+    CanvasLoader, Contact, Experience, Hero, Navbar, Portfolio, Position, SpacemanCanvas
 };
 
