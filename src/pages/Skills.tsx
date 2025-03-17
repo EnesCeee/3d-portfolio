@@ -16,7 +16,7 @@ import {
   SiCsharp,
   SiDart,
   SiDocker,
-  SiAws,
+  SiAmazonwebservices,
   SiNextdotjs
 } from 'react-icons/si';
 import { Skill } from '../types';
@@ -38,7 +38,7 @@ const iconMap: { [key: string]: JSX.Element } = {
   SiCsharp: <SiCsharp />,
   SiDart: <SiDart />,
   SiDocker: <SiDocker />,
-  SiAws: <SiAws />,
+  SiAmazonwebservices: <SiAmazonwebservices />,
   SiNextdotjs: <SiNextdotjs />
 };
 
