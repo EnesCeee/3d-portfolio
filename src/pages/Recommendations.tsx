@@ -1,13 +1,13 @@
 import React from 'react';
 import './Recommendations.css';
-import yunusProfilePic from '../images/yunus.jpg'; // Profil fotoğrafını ekleyin
+import chrisProfilePic from '../images/chris.jpg';
 
 const Recommendations: React.FC = () => {
   return (
     <div className='timeline-container'>
       <div className="recommendation-card">
         <div className="recommendation-header">
-          <img src={yunusProfilePic} alt="Yunus Yılmaz" className="profile-pic" />
+          <img src={chrisProfilePic} alt="Yunus Yılmaz" className="profile-pic" />
           <div>
             <h3>Yunus Yılmaz</h3>
             <p>Senior Software Developer @ Trendyol</p>
