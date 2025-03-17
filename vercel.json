@@ -11,6 +11,10 @@
     ],
     "routes": [
         {
+            "src": "/(.*)",
+            "dest": "build/index.html"
+        },
+        {
             "src": "/static/(.*)",
             "dest": "/static/$1"
         },
@@ -29,10 +33,6 @@
         {
             "src": "/logo512.png",
             "dest": "/logo512.png"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
         }
     ]
 }
