@@ -156,7 +156,6 @@ Your feedback is valuable and helps make this project better for everyone. Thank
 
 ## 📧 Contact
 
-- 💼 [Portfolio Website](https://enesceylan.dev)
 - 📧 Email: [enesceylan.6699@gmail.com](mailto:enesceylan.6699@gmail.com)
 - 🔗 [LinkedIn](https://linkedin.com/in/enes-ceylan-5845b0147)
 
