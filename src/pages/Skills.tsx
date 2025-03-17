@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
-import { FaReact, FaNodeJs, FaGitAlt } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaGitAlt, FaAws } from 'react-icons/fa';
 import {
   SiFlutter,
   SiSwift,
@@ -16,8 +16,7 @@ import {
   SiCsharp,
   SiDart,
   SiDocker,
-  SiNextdotjs,
-  SiAws
+  SiNextdotjs
 } from 'react-icons/si';
 import { Skill } from '../types';
 
@@ -40,7 +39,7 @@ const iconMap: { [key: string]: JSX.Element } = {
   SiDocker: <SiDocker />,
   SiNextdotjs: <SiNextdotjs />,
   FaNodeJs: <FaNodeJs />,
-  SiAws: <SiAws />
+  FaAws: <FaAws />
 };
 
 const Skills: React.FC = () => {
