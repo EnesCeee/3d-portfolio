@@ -121,7 +121,7 @@ export const getSkills = async (): Promise<Skill[]> => {
       name: 'AWS',
       category: 'Backend & Cloud',
       description: 'Experience with various AWS services and cloud architecture',
-      icon: 'SiAmazonwebservices'
+      icon: 'SiAws'
     }
   ];
 

@@ -17,7 +17,7 @@ import {
   SiDart,
   SiDocker,
   SiNextdotjs,
-  SiAmazonwebservices
+  SiAws
 } from 'react-icons/si';
 import { Skill } from '../types';
 
@@ -40,7 +40,7 @@ const iconMap: { [key: string]: JSX.Element } = {
   SiDocker: <SiDocker />,
   SiNextdotjs: <SiNextdotjs />,
   FaNodeJs: <FaNodeJs />,
-  SiAmazonwebservices: <SiAmazonwebservices />
+  SiAmazonwebservices: <SiAws />
 };
 
 const Skills: React.FC = () => {
