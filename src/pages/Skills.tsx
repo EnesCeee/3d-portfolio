@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
-import { FaReact } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaGitAlt } from 'react-icons/fa';
 import {
   SiFlutter,
   SiSwift,
@@ -16,7 +16,8 @@ import {
   SiCsharp,
   SiDart,
   SiDocker,
-  SiNextdotjs
+  SiNextdotjs,
+  SiAmazonwebservices
 } from 'react-icons/si';
 import { Skill } from '../types';
 
@@ -27,21 +28,22 @@ const iconMap: { [key: string]: JSX.Element } = {
   SiKotlin: <SiKotlin />,
   SiFirebase: <SiFirebase />,
   SiPostman: <SiPostman />,
-  FaGitAlt: <FaReact />, // Placeholder for Git icon
+  FaGitAlt: <FaGitAlt />,
   SiGithubactions: <SiGithubactions />,
   SiCplusplus: <SiCplusplus />,
   SiTypescript: <SiTypescript />,
   SiAdobexd: <SiAdobexd />,
-  SiClean: <FaReact />, // Placeholder for Clean Architecture icon
+  SiClean: <FaReact />,
   SiMongodb: <SiMongodb />,
   SiCsharp: <SiCsharp />,
   SiDart: <SiDart />,
   SiDocker: <SiDocker />,
-  SiNextdotjs: <SiNextdotjs />
+  SiNextdotjs: <SiNextdotjs />,
+  FaNodeJs: <FaNodeJs />,
+  SiAmazonwebservices: <SiAmazonwebservices />
 };
 
 const Skills: React.FC = () => {
-
   const [skillsData, setSkillsData] = useState<Skill[]>([]);
 
   useEffect(() => {
@@ -60,7 +62,6 @@ const Skills: React.FC = () => {
     acc[skill.category].push(skill);
     return acc;
   }, {});
-
 
   return (
     <div className="skills-container">

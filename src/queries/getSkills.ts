@@ -101,9 +101,27 @@ export const getSkills = async (): Promise<Skill[]> => {
     },
     {
       name: 'Next.js',
-      category: 'Development Tools',
+      category: 'Frontend Development',
       description: 'Building performant and SEO-friendly React applications',
       icon: 'SiNextdotjs'
+    },
+    {
+      name: 'React.js',
+      category: 'Frontend Development',
+      description: 'Creating modern and responsive web applications',
+      icon: 'FaReact'
+    },
+    {
+      name: 'Node.js',
+      category: 'Backend & Cloud',
+      description: 'Building scalable backend services and APIs',
+      icon: 'FaNodeJs'
+    },
+    {
+      name: 'AWS',
+      category: 'Backend & Cloud',
+      description: 'Experience with various AWS services and cloud architecture',
+      icon: 'SiAmazonwebservices'
     }
   ];
 
