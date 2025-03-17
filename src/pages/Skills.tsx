@@ -40,7 +40,7 @@ const iconMap: { [key: string]: JSX.Element } = {
   SiDocker: <SiDocker />,
   SiNextdotjs: <SiNextdotjs />,
   FaNodeJs: <FaNodeJs />,
-  SiAmazonwebservices: <SiAws />
+  SiAws: <SiAws />
 };
 
 const Skills: React.FC = () => {
