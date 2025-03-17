@@ -1,0 +1,29 @@
+{
+  "projectName": "netflix_portfolio",
+  "projectOwner": "EnesCeee",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "EnesCeee",
+      "name": "Enes Ceylan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/EnesCeee",
+      "profile": "https://github.com/EnesCeee",
+      "contributions": [
+        "code",
+        "design",
+        "doc",
+        "ideas",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}

@@ -1,25 +1,71 @@
-## 🌟 Sumanth Samala's Netflix inspired Portfolio 🌟 - https://sumanthsamala.com/
+# Netflix Portfolio
 
-Welcome to my personal portfolio project! 🚀 This website showcases my work, skills, and experiences in web development. It's designed to be lightweight, customizable, and professional while maintaining an approachable style.
+A Netflix-themed personal portfolio website built with React and TypeScript. This project showcases my professional experience, skills, and projects in a unique and engaging way.
 
-Explore specific subdomains tailored to different tech stacks:
+## 🚀 Features
 
-- 🌟 [java.sumanthsamala.com](https://java.sumanthsamala.com/) for Java Spring Boot-related work.
-- 🌟 [node.sumanthsamala.com](https://node.sumanthsamala.com/) for Node.js and backend development.
-- 🌟 [frontend.sumanthsamala.com](https://frontend.sumanthsamala.com/) for frontend development expertise.
-- 🌟 [ror.sumanthsamala.com](https://ror.sumanthsamala.com/) for Ruby on Rails projects.
+- 📺 Netflix-inspired UI/UX design
+- 🎯 Professional timeline and work experience
+- 💻 Skills showcase with animated cards
+- 📱 Fully responsive design
+- 🌐 Work permit and availability status
+- 📧 Contact information and social links
 
-![Screenshot from 2024-12-08 19-19-06](https://github.com/user-attachments/assets/f8220485-16ec-48cf-8cb2-7853540c5724)
+## 🛠️ Built With
+
+- React.js
+- TypeScript
+- CSS3 with custom animations
+- React Icons
+- React Router
+
+## 🏃‍♂️ Running Locally
+
+1. Clone the repository
+```bash
+git clone https://github.com/EnesCeee/netflix_portfolio.git
+```
+
+2. Install dependencies
+```bash
+cd netflix_portfolio
+yarn install
+```
+
+3. Start the development server
+```bash
+yarn start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser
+
+## 📝 License
+
+This project is for personal use only. All rights reserved.
+
+## 👤 Author
+
+**Enes Ceylan**
+
+- LinkedIn: [@enesceylan](https://linkedin.com/in/enes-ceylan-5845b0147/)
+- GitHub: [@EnesCeee](https://github.com/EnesCeee)
+
+---
+
+## 🌟 Netflix Inspired Portfolio 🌟
+
+Welcome to my personal portfolio project! 🚀 This website showcases my work, skills, and experiences in software development. It's designed to be lightweight, customizable, and professional.
+
+![Portfolio Preview](https://github.com/user-attachments/assets/f8220485-16ec-48cf-8cb2-7853540c5724)
 
 ---
 
 ## ✨ Features
 
-- 🌍 **Dynamic Content**: Powered by [DatoCMS](https://www.datocms.com) for easy content management.
-- ⚡ **Fast & Responsive**: Built with modern web technologies for seamless performance.
-- 🎨 **Customizable**: Modular and easy to adapt to your own needs.
-- 📈 **Professional Yet Personal**: Highlights projects, skills, and achievements.
-- 🎨 It can support various por
+- 🌍 **Dynamic Content**: Modern content management
+- ⚡ **Fast & Responsive**: Seamless performance with modern web technologies
+- 🎨 **Customizable**: Modular and adaptable to personal needs
+- 📈 **Professional**: Highlights projects, skills, and achievements
 
 ---
 
@@ -108,11 +154,11 @@ Your feedback is valuable and helps make this project better for everyone. Thank
 
 ---
 
-## 📧 Contact Me
+## 📧 Contact
 
-- 💼 [Portfolio Website](https://sumanthsamala.com)
-- 📧 Email: [chintusamala96@gmail.com](mailto:chintusamala96@gmail.com)
-- 🔗 [LinkedIn](https://uk.linkedin.com/in/sumanth-samala-82431161)
+- 💼 [Portfolio Website](https://enesceylan.dev)
+- 📧 Email: [enesceylan.6699@gmail.com](mailto:enesceylan.6699@gmail.com)
+- 🔗 [LinkedIn](https://linkedin.com/in/enes-ceylan-5845b0147)
 
 ---
 
