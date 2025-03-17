@@ -103,7 +103,7 @@ export const getSkills = async (): Promise<Skill[]> => {
       name: 'AWS',
       category: 'Backend & Cloud',
       description: 'Cloud infrastructure management and deployment with AWS services',
-      icon: 'SiAmazonwebservices'
+      icon: 'SiAws'
     },
     {
       name: 'Next.js',
