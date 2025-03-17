@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
-import { FaReact, FaAws } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
 import {
   SiFlutter,
   SiSwift,
@@ -16,7 +16,6 @@ import {
   SiCsharp,
   SiDart,
   SiDocker,
-  SiAmazonwebservices,
   SiNextdotjs
 } from 'react-icons/si';
 import { Skill } from '../types';
@@ -38,7 +37,6 @@ const iconMap: { [key: string]: JSX.Element } = {
   SiCsharp: <SiCsharp />,
   SiDart: <SiDart />,
   SiDocker: <SiDocker />,
-  SiAmazonwebservices: <FaAws />,
   SiNextdotjs: <SiNextdotjs />
 };
 

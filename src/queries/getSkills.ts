@@ -100,12 +100,6 @@ export const getSkills = async (): Promise<Skill[]> => {
       icon: 'SiDocker'
     },
     {
-      name: 'AWS',
-      category: 'Backend & Cloud',
-      description: 'Cloud infrastructure management and deployment with AWS services',
-      icon: 'SiAmazonwebservices'
-    },
-    {
       name: 'Next.js',
       category: 'Development Tools',
       description: 'Building performant and SEO-friendly React applications',
