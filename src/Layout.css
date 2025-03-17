@@ -1,18 +1,21 @@
 .layout {
     min-height: 100vh;
-    background-color: #141414;
-    color: #ffffff;
+    background-color: #141414 !important;
+    color: #ffffff !important;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    position: relative;
 }
 
 .main-content {
     flex: 1;
     padding-top: 70px;
-    /* Navbar height */
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    background-color: #141414;
+    min-height: calc(100vh - 70px);
 }
