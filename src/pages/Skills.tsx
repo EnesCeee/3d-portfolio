@@ -1,31 +1,46 @@
 import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
-
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava } from 'react-icons/fa';
-import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage } from 'react-icons/si';
+import { FaReact } from 'react-icons/fa';
+import {
+  SiFlutter,
+  SiSwift,
+  SiKotlin,
+  SiFirebase,
+  SiPostman,
+  SiGithubactions,
+  SiCplusplus,
+  SiTypescript,
+  SiAdobexd,
+  SiMongodb,
+  SiCsharp,
+  SiDart,
+  SiDocker,
+  SiAmazonwebservices,
+  SiNextdotjs
+} from 'react-icons/si';
 import { Skill } from '../types';
 
 const iconMap: { [key: string]: JSX.Element } = {
-  SiRubyonrails: <SiRubyonrails />,
-  FaNodeJs: <FaNodeJs />,
-  SiSpringboot: <SiSpringboot />,
-  FaJava: <FaJava />,
-  SiPhp: <SiPhp />,
+  SiFlutter: <SiFlutter />,
   FaReact: <FaReact />,
+  SiSwift: <SiSwift />,
+  SiKotlin: <SiKotlin />,
+  SiFirebase: <SiFirebase />,
+  SiPostman: <SiPostman />,
+  FaGitAlt: <FaReact />, // Placeholder for Git icon
+  SiGithubactions: <SiGithubactions />,
+  SiCplusplus: <SiCplusplus />,
   SiTypescript: <SiTypescript />,
-  FaAws: <FaAws />,
-  FaDocker: <FaDocker />,
-  SiPostgresql: <SiPostgresql />,
-  SiMysql: <SiMysql />,
-  SiKubernetes: <SiKubernetes />,
-  SiGooglecloud: <SiGooglecloud />,
-  SiHeroku: <SiHeroku />,
-  SiNetlify: <SiNetlify />,
-  SiRabbitmq: <SiRabbitmq />,
-  SiImessage: <SiImessage />,
+  SiAdobexd: <SiAdobexd />,
+  SiClean: <FaReact />, // Placeholder for Clean Architecture icon
+  SiMongodb: <SiMongodb />,
+  SiCsharp: <SiCsharp />,
+  SiDart: <SiDart />,
+  SiDocker: <SiDocker />,
+  SiAmazonwebservices: <SiAmazonwebservices />,
+  SiNextdotjs: <SiNextdotjs />
 };
-
 
 const Skills: React.FC = () => {
 

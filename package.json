@@ -2,6 +2,8 @@
   "name": "netflix_portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": "Enes Ceylan <contact@enesceylan.dev>",
+  "description": "Enes Ceylan'ın Netflix temalı portfolyo projesi",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -46,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react-vertical-timeline-component": "^3.3.6"
   }
 }

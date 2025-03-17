@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ContactMe.css';
-import profilePic from '../images/sumanth.jpeg';
-import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaCoffee, FaLinkedin, FaUser } from 'react-icons/fa';
 import { ContactMe as IContactMe } from '../types';
 import { getContactMe } from '../queries/getContactMe';
 
@@ -23,7 +22,9 @@ const ContactMe: React.FC = () => {
   return (
     <div className="contact-container">
       <div className="linkedin-badge-custom">
-        <img src={profilePic} alt="Sumanth Samala" className="badge-avatar" />
+        <div className="badge-avatar" title="Profile Avatar">
+          <FaUser size={50} />
+        </div>
         <div className="badge-content">
           <h3 className="badge-name">{userData?.name}</h3>
           <p className="badge-title">{userData.title}</p>
@@ -49,12 +50,6 @@ const ContactMe: React.FC = () => {
           <FaEnvelope className="contact-icon" />
           <a href={`mailto:${userData.email}`} className="contact-link">
             {userData.email}
-          </a>
-        </div>
-        <div className="contact-item">
-          <FaPhoneAlt className="contact-icon" />
-          <a href={`tel:${userData.phoneNumber}`} className="contact-link">
-            {userData.phoneNumber}
           </a>
         </div>
         <div className="contact-fun">

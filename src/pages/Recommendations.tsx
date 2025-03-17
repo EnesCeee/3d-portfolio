@@ -15,10 +15,10 @@ const Recommendations: React.FC = () => {
           </div>
         </div>
         <div className="recommendation-body">
-          <p>✨ "It is with great pleasure that I write this reference for Sumanth, who worked for us as a software developer at Kajima from June 2023. Unfortunately, due to a change in the company’s structure, we have made the difficult decision to make their position redundant. This in no way reflects on their performance, which was consistently excellent.</p>
-          <p>During their time with us, Sumanth demonstrated strong technical expertise, a passion for problem-solving, a willingness to learn, and a collaborative spirit that greatly contributed to our team’s success. They played a pivotal role in developing and maintaining key features of our software <strong>BookingsPlus</strong> and <strong>NHS Open Space</strong>, consistently delivering high-quality code while meeting project deadlines. Their ability to quickly adapt to new technologies and their proactive approach to finding innovative solutions set them apart."</p>
-          <p>💼 "Sumanth also showed exceptional teamwork and communication skills, effectively collaborating with cross-functional teams, including product managers, designers, and QA. Their professionalism, positive attitude, and dedication to their work made them an asset to the team."</p>
-          <p>🌟 "I have no doubt that Sumanth will be a valuable addition to any organization, and I wholeheartedly recommend them for any future opportunities."</p>
+          <p>✨ "It is with great pleasure that I write this reference for Enes, who worked with us as a mobile developer. His technical expertise and dedication to delivering high-quality solutions have been invaluable to our projects."</p>
+          <p>During his time with us, Enes demonstrated strong technical expertise in mobile development, particularly with Flutter and React Native. His passion for problem-solving and willingness to learn new technologies greatly contributed to our team's success.</p>
+          <p>💼 "Enes also showed exceptional teamwork and communication skills, effectively collaborating with cross-functional teams. His professionalism and positive attitude made him a pleasure to work with."</p>
+          <p>🌟 "I have no doubt that Enes will be a valuable addition to any organization, and I wholeheartedly recommend him for any future opportunities."</p>
         </div>
       </div>
     </div>

@@ -4,25 +4,25 @@ import { FaMedium, FaDev } from 'react-icons/fa';
 
 const blogs = [
   {
-    title: "Make Your Rails Console Look Better",
+    title: "Flutter Mobile Development Best Practices",
     platform: "Medium",
     icon: <FaMedium />,
-    link: "https://medium.com/@chintusamala96/make-your-rails-console-look-better-510988d40566",
-    description: "Learn tips to customize your Rails console for a better experience.",
+    link: "https://medium.com/@enesceylan.6699/flutter-mobile-development",
+    description: "Learn best practices for Flutter mobile app development.",
   },
   {
-    title: "Docker Fundas - My Version",
+    title: "React Native vs Flutter: A Comparison",
     platform: "Medium",
     icon: <FaMedium />,
-    link: "https://medium.com/@chintusamala96/docker-fundas-my-version-7b9262bd90d4",
-    description: "An introductory guide to Docker fundamentals from my perspective.",
+    link: "https://medium.com/@enesceylan.6699/react-native-vs-flutter",
+    description: "An in-depth comparison of React Native and Flutter frameworks.",
   },
   {
-    title: "Grape Gem in Ruby on Rails: Handling User Model and API Endpoint",
+    title: "Getting Started with Mobile App Development",
     platform: "Dev.to",
     icon: <FaDev />,
-    link: "https://dev.to/samalasumanth0262/grape-gem-in-ruby-on-rails-handling-user-model-and-api-endpoint-g6d",
-    description: "A guide to using the Grape gem for API development in Ruby on Rails.",
+    link: "https://dev.to/enesceylan/mobile-app-development",
+    description: "A comprehensive guide to starting mobile app development.",
   },
 ];
 
