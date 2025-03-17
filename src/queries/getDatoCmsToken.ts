@@ -4,12 +4,14 @@ export const getDatoCmsToken = (): string => {
   const hostname = window.location.hostname;
 
   switch (hostname) {
-    case 'enesceylan.dev':
-    case 'www.enesceylan.dev':
+    case 'ceylanenes.com.tr':
+    case 'www.ceylanenes.com.tr':
+    case '3d-portfolio-fcldcepaz-enesceees-projects.vercel.app':
     case 'localhost':
       return process.env.REACT_APP_DATOCMS_API_TOKEN || '';
 
     default:
-      throw new Error(`No DatoCMS token configured for hostname: ${hostname}`);
+      console.warn(`Using default token for hostname: ${hostname}`);
+      return process.env.REACT_APP_DATOCMS_API_TOKEN || '';
   }
 };
