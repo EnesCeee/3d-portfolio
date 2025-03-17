@@ -1,17 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import './Layout.css';
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC = () => {
   return (
     <div className="layout">
       <Navbar />
       <main className="main-content">
-        {children}
+        <Outlet />
       </main>
     </div>
   );
