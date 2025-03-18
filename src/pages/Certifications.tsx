@@ -48,9 +48,9 @@ const mockCertifications = [
   },
   {
     title: "Computer Engineering",
-    issuer: "Sakarya University",
+    issuer: "Kırıkkale University",
     issuedDate: "June 2023",
-    link: "https://www.sau.edu.tr",
+    link: "https://www.kku.edu.tr",
     iconName: "university"
   }
 ];
