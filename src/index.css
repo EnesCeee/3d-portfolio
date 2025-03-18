@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 16px;
 }
 
 html,
@@ -30,4 +35,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Mobil cihazlar için font boyutu ayarlamaları */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Küçük mobil cihazlar için font boyutu ayarlamaları */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Tablet cihazlar için font boyutu ayarlamaları */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Dokunmatik cihazlar için tıklama efektlerini iyileştirme */
+@media (hover: none) {
+
+  a:hover,
+  button:hover {
+    opacity: 1 !important;
+  }
 }
